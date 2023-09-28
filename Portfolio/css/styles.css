@@ -14,10 +14,16 @@ body {
     color: white;
     height: 50px;
 
+    
+    animation-name: navbar;
+    animation-duration: 4s;
+
 }
 
 .pagina_principal {
     color: aliceblue;
+    
+    
 }
 
 .pagina_principal span {
@@ -48,11 +54,28 @@ body {
     font-weight: 100;
 }
 
+.navBar li.icos-hamburguer {
+    display: none;
+
+}
+
+.navBar a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: #f27609;
+}
+
 .perfil-img {
 
     width: 40%;
     text-align: center;
     margin-top: 100px;
+
+    animation-name: perfil-aniamacao;
+    animation-duration: 6s;
 
 }
 
@@ -66,6 +89,10 @@ body {
 
     vertical-align: top;
     width: 59%;
+
+    animation-name: titulo-aniamacao;
+    animation-duration: 10s;
+
 }
 
 .perfil-titulo h1 {
@@ -85,11 +112,14 @@ body {
 
 }
 
-.main{
+.main {
     padding-top: 80px;
     padding-right: 180px;
     padding-left: 80px;
     padding-bottom: 100px;
+    
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .main h1 {
@@ -120,7 +150,7 @@ body {
 
 }
 
-.img-curriculo{
+.img-curriculo {
     float: left;
     width: 200px;
     margin-right: 20px;
@@ -134,47 +164,55 @@ body {
     color: gray;
 }
 
-.caminho li{
+.caminho a {
+    color: gray;
+}
+
+.caminho li {
     display: inline-block;
 }
-.icons-img{
+
+.icons-img {
     margin-right: 8px;
 
 }
 
-.minatura{
+.minatura {
     width: 320px;
     height: 320px;
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 15px;
-    background-size: contain ;
+    background-size: contain;
     overflow: hidden;
 }
 
-.minatura img{
+.minatura img {
     border-radius: 40px;
 }
-.blackBox{
+
+.blackBox {
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0;
     padding-top: 120px;
+    transition: 2s;
 }
 
-.blackBox:hover{
+.blackBox:hover {
     opacity: 0.8;
+    transition: 1s;
 
 }
 
-.blackBox-text{
+.blackBox-text {
     text-align: center;
 }
 
-.blackBox-text h1{
+.blackBox-text h1 {
     font-size: 16px;
-    color:#f27609;
+    color: #f27609;
     text-transform: uppercase;
     margin-top: 0;
 }
@@ -186,3 +224,34 @@ body {
 
 }
 
+.img-projetos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.link-de-voltar{
+    color: #f27609;
+}
+
+@keyframes perfil-aniamacao{
+    0% {opacity: 0; transform: translate(0px,20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes titulo-aniamacao{
+    0% {opacity: 0; transform: translate(0px,-20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes conteudo{
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes navbar{
+    0% {opacity: 0; }
+    50% {opacity:0}
+    100% {opacity: 1;}
+
+}
