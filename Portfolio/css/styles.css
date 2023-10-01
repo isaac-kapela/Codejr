@@ -22,6 +22,8 @@ body {
 
 .pagina_principal {
     color: aliceblue;
+    vertical-align: top;
+	padding-bottom: 20px;
     
     
 }
@@ -59,6 +61,14 @@ body {
 
 }
 
+.navBar li.icos-hamburguer:hover {
+    color: #f27609;
+    cursor: pointer;
+    
+
+}
+
+
 .navBar a {
     color: wheat;
     text-decoration: none;
@@ -72,7 +82,7 @@ body {
 
     width: 40%;
     text-align: center;
-    margin-top: 100px;
+    
 
     animation-name: perfil-aniamacao;
     animation-duration: 6s;
@@ -80,8 +90,9 @@ body {
 }
 
 .perfil-img img {
-    width: 330px;
-    border-radius: 330px;
+    width: 320px;
+	border-radius: 320px;
+	margin-top: 100px;
 
 }
 
@@ -187,6 +198,10 @@ body {
     overflow: hidden;
 }
 
+.miniatura a {
+	text-decoration: none;
+}
+
 .minatura img {
     border-radius: 40px;
 }
@@ -214,7 +229,7 @@ body {
     font-size: 16px;
     color: #f27609;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .blackBox-text h2 {
@@ -226,7 +241,8 @@ body {
 
 .img-projetos {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .link-de-voltar{
@@ -253,5 +269,106 @@ body {
     0% {opacity: 0; }
     50% {opacity:0}
     100% {opacity: 1;}
+
+}
+
+@media (max-width: 1000px){
+.navBar li {
+    display: none;
+}
+.navBar li.icos-hamburguer{
+    display: inline-block;
+}
+.pagina_principal div{
+    display: block;
+    height: auto;
+}
+    .perfil-img {
+        width: 100%;
+        
+    }
+.perfil-img img {
+    max-width: 75%;
+	margin-top: 0;
+	max-width: 80%;
+
+
+        }
+
+.perfil-titulo{
+    width: 100%;
+    text-align: center;
+    
+}        
+
+.perfil-titulo h1{
+	margin-top: 30px;
+	font-size: 36px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.perfil-titulo h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.main {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    overflow-wrap: break-word;
+  	word-wrap: break-word;
+}
+
+.main p{
+    text-align: left;
+    line-height: 30px;
+}
+.main a{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.caminho li{
+    font-size: 12px;
+
+}
+
+.img-curriculo {
+    float: none;
+    width: 100px;
+    margin-right: 0px;
+    border-radius: 30px;
+}
+
+.minatura{
+    max-width: 100%;
+    background-size: auto 100% ;
+}
+.blackBox{
+    opacity: 0.8;
+}
+.menujs{
+    height: auto;
+
+}
+
+.menujs ul{
+    height: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.menujs li{
+    display: block;
+    border-color: solid grey 1px;
+    width: 100%;
+    padding: 0;
+}
 
 }
