@@ -347,8 +347,9 @@ body {
 
 .minatura{
     max-width: 100%;
-    background-size: auto 100% ;
+    background-size: auto 100% ;  
 }
+
 .blackBox{
     opacity: 0.8;
 }
